@@ -8,4 +8,8 @@ jobs:
     steps:
       - name: Simple JS Action
         id: greet
-        uses: ishalinigupta/GitJenkins@04f187d4314ef43fa4c61f6cc136d533db1eeef3
+        uses: actions/hello-world-javascript-action@v1
+        with:
+          who-to-greet: Everyone
+      - name: Log Greeting Time
+        run: echo "{{ steps.greet.outputs.time }}"
