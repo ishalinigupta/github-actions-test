@@ -1,4 +1,4 @@
-name: Context
+name: Context File
 on: push
 
 jobs:
