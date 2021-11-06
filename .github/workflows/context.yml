@@ -1,3 +1,4 @@
+name: Context File
 on: push
 
 jobs:
@@ -9,6 +10,7 @@ jobs:
           echo ${{ contains( 'hello', 'll' ) }}
           echo ${{ startsWith( 'hello', 'he' ) }}
           echo ${{ endsWith( 'hello', 'lo' ) }}
+          
   one:
     runs-on: ubuntu-latest
     steps:
